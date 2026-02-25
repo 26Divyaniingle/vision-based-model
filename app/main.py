@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+<<<<<<< HEAD
 from fastapi.middleware.cors import CORSMiddleware
 from app.database.db import init_db
 from app.api.routes_auth import router as auth_router
@@ -37,3 +38,13 @@ async def root():
 @app.get("/health")
 async def health():
     return {"status": "healthy"}
+=======
+from app.database.db import init_db
+from app.api.routes_auth import router as auth_router
+
+app = FastAPI(title="Vision Agentic AI MVP")
+
+init_db()
+
+app.include_router(auth_router)
+>>>>>>> bec8c39f2d6b58758233c033d5b8a2baef208327

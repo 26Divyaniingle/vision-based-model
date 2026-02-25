@@ -2,6 +2,7 @@ fastapi
 uvicorn
 sqlalchemy
 pydantic
+<<<<<<< HEAD
 python-multipart
 opencv-python
 mediapipe
@@ -13,3 +14,6 @@ pillow
 requests
 scipy
 scikit-image
+=======
+python-multipart
+>>>>>>> bec8c39f2d6b58758233c033d5b8a2baef208327
